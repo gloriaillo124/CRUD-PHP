@@ -8,7 +8,7 @@ $pass ='';
 try{
     $cnx =new PDO($dsn,$user,$pass);
     $cnx ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_SILENT);
-}catch(PDOException$e){
+}catch(PDOException $e){
     echo'Une erreur est survenue:'.$e->getMessage();
 }
 
